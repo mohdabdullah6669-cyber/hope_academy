@@ -1,7 +1,6 @@
 package com.practice.hope_academy.controller;
 
 
-
 import com.practice.hope_academy.entity.Account;
 import com.practice.hope_academy.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,7 @@ public class AccountController {
     AccountService as;
 
     @PostMapping("/create/acc")
-   // @ResponseStatus(HttpStatus.CREATED)
+    // @ResponseStatus(HttpStatus.CREATED)
     public void create(@RequestBody Account ac) {
 
         as.create(ac);
@@ -38,7 +37,7 @@ public class AccountController {
     }
 
     @DeleteMapping("/delete")
-    public void delete(@RequestBody Account ac){
+    public void delete(@RequestBody Account ac) {
 
         as.delete(ac);
 
