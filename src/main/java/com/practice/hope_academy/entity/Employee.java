@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name="")
+@Table(name = "")
 @Data
 @ToString
 @NoArgsConstructor
@@ -12,16 +12,16 @@ public class Employee {
 
     @Id
     @Column(name = "employeeId")
-    private String   empId;
+    private String empId;
 
     @Column
-    private  String empName;
+    private String empName;
 
     @Column
-    private  String  empDesignation;
+    private String empDesignation;
 
     @Column
-    private  double empSalary;
+    private double empSalary;
 
     @Column
     private String empNumber;
@@ -38,11 +38,11 @@ public class Employee {
         this.deptId = deptId;
     }
 
-    public String  getEmpId() {
+    public String getEmpId() {
         return empId;
     }
 
-    public void setEmpId(String  empId) {
+    public void setEmpId(String empId) {
         this.empId = empId;
     }
 
