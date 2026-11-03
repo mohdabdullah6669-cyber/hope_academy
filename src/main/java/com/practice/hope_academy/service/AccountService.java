@@ -14,28 +14,28 @@ public class AccountService {
     AccountRepository ar;
 
 
-       public void create(Account account) {
+    public void create(Account account) {
 
-            ar.save(account);
+        ar.save(account);
 
-        }
-
-        public List<Account> getAllData() {
-
-            return ar.findAll();
-        }
-
-        @Transactional
-        public void update(Account account) {
-
-            ar.save(account);
-        }
-
-        public void delete(Account account) {
-
-            ar.delete(account);
-        }
     }
+
+    public List<Account> getAllData() {
+
+        return ar.findAll();
+    }
+
+    @Transactional
+    public void update(Account account) {
+
+        ar.save(account);
+    }
+
+    public void delete(Account account) {
+
+        ar.delete(account);
+    }
+}
 
 
 

@@ -18,19 +18,22 @@ public class EmployeeService {
 
         //  Employee zia = new Employee("23456", "zia" , "java" , 100000.24, "9876543", "456789");
         // Employee anas = new Employee("12345" , "anas" , "java" , 100000.23, "970017865" , "908723");
-       return er.save(e);
+        return er.save(e);
 
 
     }
-    public List<Employee> getAllData(){
+
+    public List<Employee> getAllData() {
         return er.findAll();
 
     }
-    public void update(Employee employee){
+
+    public void update(Employee employee) {
         er.save(employee);
 
     }
-    public void delete(Employee employee){
+
+    public void delete(Employee employee) {
         er.delete(employee);
     }
 
